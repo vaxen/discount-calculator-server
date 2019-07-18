@@ -1,5 +1,5 @@
 # DISCOUNT SERVICE
-backend service for calculating a discount on a trip and split it into different customers who want to use it.
+backend service for calculating a discount on a trip and split it into different customer
 
 ## run
 
