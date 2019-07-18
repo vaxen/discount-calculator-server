@@ -1,0 +1,52 @@
+{
+	"info": {
+		"_postman_id": "a24baef6-08a8-4c8f-8829-a51092979344",
+		"name": "discount-service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/discount",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "discount",
+						"value": "22",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:4000/discount?percentage=25&customers=4&amount=100",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"discount"
+					],
+					"query": [
+						{
+							"key": "percentage",
+							"value": "25"
+						},
+						{
+							"key": "customers",
+							"value": "4"
+						},
+						{
+							"key": "amount",
+							"value": "100"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
