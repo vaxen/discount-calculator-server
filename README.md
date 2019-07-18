@@ -7,7 +7,8 @@ backend service for calculating a discount on a trip and split it into different
 
 ```nodemon myapp```
 
-formulas: 
+### formulas:
+
 ```discount-total -> total-amount * discount%```
 
 ```amount-to-pay -> (total-amount - discount-total)/```
