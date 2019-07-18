@@ -7,10 +7,8 @@ backend service for calculating a discount on a trip and split it into different
 
 ```nodemon myapp```
 
-parameters: total-amount discount% number-of-customers
-
 formula: 
-discount-total -> total-amount * discount%
-amount-to-pay -> (total-amount - discount-total)/
+```discount-total -> total-amount * discount%```
+```amount-to-pay -> (total-amount - discount-total)/```
 
 server run on port 4000
