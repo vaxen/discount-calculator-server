@@ -7,8 +7,9 @@ backend service for calculating a discount on a trip and split it into different
 
 ```nodemon myapp```
 
-formula: 
+formulas: 
 ```discount-total -> total-amount * discount%```
+
 ```amount-to-pay -> (total-amount - discount-total)/```
 
 server run on port 4000
