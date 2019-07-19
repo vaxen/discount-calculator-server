@@ -25,4 +25,4 @@ server run on port 4000
 
 ```docker build -t discount-calculator-server .```
 
-```docker run -it docker_nodejs_app```
+```docker run --rm -it -p 4000:4000/tcp discount-calculator-server:latest```
