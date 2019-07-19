@@ -1,6 +1,6 @@
-var express = require("express");
-var _ = require("lodash");
-var router = express.Router();
+let express = require("express");
+let _ = require("lodash");
+let router = express.Router();
 
 const UNDEFINED_DISCOUNT = { error: "discount is mandatory" };
 const UNDEFINED_CUSTOMERS = { error: "customers is mandatory" };
@@ -8,7 +8,7 @@ const UNDEFINED_AMOUNT = { error: "invalid amount value" };
 
 /* GET discount api. */
 router.get("/", function(req, res, next) {
-  var { percentage, customers, amount } = req.query;
+  let { percentage, customers, amount } = req.query;
   if (!percentage) {
     return res.send(UNDEFINED_DISCOUNT);
   } else if (!customers) {
@@ -16,9 +16,9 @@ router.get("/", function(req, res, next) {
   } else if (!amount) {
     return res.send(UNDEFINED_AMOUNT);
   }
-  var discount_total_amount = amount * _.divide(percentage, 100);
-  var amount_to_pay = amount - discount_total_amount;
-  var amount_to_pay_each = _.divide(amount_to_pay, customers);
+  let discount_total_amount = amount * _.divide(percentage, 100);
+  let amount_to_pay = amount - discount_total_amount;
+  let amount_to_pay_each = _.divide(amount_to_pay, customers);
 
   discount = {
     "discount-percentage": percentage + "%",

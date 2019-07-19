@@ -29,6 +29,6 @@ server run on port 4000
 
 ## test with coverage
 
-```test-coverage```
+```npm run test-coverage```
 
 it will generate a test coverage report in ```./coverage/index.html```
