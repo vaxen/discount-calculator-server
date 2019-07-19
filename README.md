@@ -27,8 +27,8 @@ server run on port 4000
 
 ```docker run --rm -it -p 4000:4000/tcp discount-calculator-server:latest```
 
-## test
+## test with coverage
 
-```npm test```
+```test-coverage```
 
-it will also generate a test coverage report in ```./coverage/index.html```
+it will generate a test coverage report in ```./coverage/index.html```

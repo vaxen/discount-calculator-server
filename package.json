@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node ./bin/www",
     "dev": "nodemon ./bin/www",
-    "test": "nyc --reporter=html mocha ./test --recursive"
+    "test": "mocha ./test --recursive",
+    "test-coverage": "nyc --reporter=html mocha ./test --recursive"
   },
   "dependencies": {
     "chai-http": "^4.3.0",
