@@ -3,6 +3,8 @@ backend service for calculating a discount on a trip and split it into different
 
 ## run
 
+``` docker run -d -p 27017-27019:27017-27019 --name discount.service.mongo mongo:4.0.4```
+
 ```npm install```
 
 ```npm start```

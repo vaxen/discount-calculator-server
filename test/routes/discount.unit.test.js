@@ -17,7 +17,7 @@ describe("Discount route", function() {
   it("Should send valid response", done => {
     chai
       .request(server)
-      .get("/discount?percentage=25&customers=4&amount=100")
+      .get("/discount/qparam?percentage=25&customers=4&amount=100")
       .end((err, result) => {
         result.should.have.status(200);
         expect(result.body).to.eql(validResponse);
