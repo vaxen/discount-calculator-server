@@ -27,7 +27,7 @@ router.get("/qparam", function(req, res, next) {
     "amount-to-pay": amount_to_pay,
     "amount-to-pay-each": amount_to_pay_each
   };
-  res.send(discount);
+  //res.send(discount);
 });
 
 router.get(
