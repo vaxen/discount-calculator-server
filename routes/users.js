@@ -3,8 +3,14 @@ var router = express.Router();
 const User = require("./../model/user");
 
 /* GET users listing. */
-router.get("/", function(req, res, next) {
-  res.send("respond with a resource");
+router.get("/", (req, res) => {
+  User.find()
+    .then(users => {
+      res.send(users);
+    })
+    .catch(error => {
+      res.status(400).send(error);
+    });
 });
 
 router.post("/", (req, res) => {
